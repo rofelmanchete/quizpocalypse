@@ -1,0 +1,50 @@
+[v-cloak] {
+    display: none;
+}
+
+header {
+    padding: 15px 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.title p {
+    margin: 0;
+    line-height: 20px;
+    word-break: break-word;
+}
+
+.modal-header button {
+    margin-left: auto;
+}
+
+.table-quizzes th,
+.table-quizzes td {
+    vertical-align: middle;
+}
+
+.table-quizzes td.row-number {
+    width: 40px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.table-quizzes td.items-count {
+    text-align: center;
+    font-size: 20px;
+}
+
+.table-quizzes td.action {
+    text-align: center;
+    font-size: 24px;
+}
+
+.table-quizzes .avatar,
+.modal-avatar {
+    width: 60px;
+    border-radius: 50%;
+}
