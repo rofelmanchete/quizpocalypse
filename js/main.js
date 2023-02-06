@@ -18,6 +18,7 @@ const app = Vue.createApp({
                 id: 'quiz-modal',
                 el: null
             },
+            query: ''
         }
     },
 
@@ -33,6 +34,14 @@ const app = Vue.createApp({
                 }
             }
             return bool;
+        },
+        searchedModules() {
+            if(!this.modules)
+                return [];
+            const term = this.query.toLowerCase().trim();
+            return this.modules.filter(module =>
+                module.profile.username.toLowerCase().includes(term) || module.profile.fullName.toLowerCase().includes(term)
+            );
         }
     },
 

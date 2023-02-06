@@ -18,39 +18,51 @@
                 <table class="table table-quizzes table-hover table-striped">
                     <thead>
                         <tr>
-                            <td style="width: 48px;"></td>
+                            <td colspan="4">
+                                <input v-model="query" type="search" class="form-control form-control-lg" placeholder="Search">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row-number"></td>
                             <th>BSIT-3B</th>
                             <th style="text-align: center">ITEMS</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(module, index) in modules" class="col-sm-3">
-                            <td class="row-number">{{ index+1 }}.</td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img
-                                        :src="`https://avatars.githubusercontent.com/${module.profile.username}`"
-                                        :alt="module.profile.username"
-                                        class="avatar d-none d-sm-inline-block"
-                                    >
-                                    <div class="title">
-                                        <p>
-                                            <a :href="`https://github.com/${module.profile.username}`" class="text-decoration-none fw-bold" target="_blank">
-                                                @{{ module.profile.username }}
-                                            </a>
-                                        </p>
-                                        <p class="fw-bold">{{ module.profile.fullName }}</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="items-count">{{ module.totalItems }}</td>
-                            <td class="action">
-                                <button @click="showQuiz(module.name)" class="btn btn-dark">
-                                    Take<span class="d-none d-sm-inline-block">&nbsp;Quiz</span>
-                                </button>
+                        <tr v-if="searchedModules.length <= 0" class="table-danger">
+                            <td colspan="4" class="error-msg">
+                                No quizzes found<template v-if="query.trim() !== ''"> for <b><i>{{ query }}</i></b></template>.
                             </td>
                         </tr>
+                        <template v-else>
+                            <tr v-for="(module, index) in searchedModules" class="col-sm-3">
+                                <td class="row-number">{{ index+1 }}.</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img
+                                            :src="`https://avatars.githubusercontent.com/${module.profile.username}`"
+                                            :alt="module.profile.username"
+                                            class="avatar d-none d-sm-inline-block"
+                                        >
+                                        <div class="title">
+                                            <p>
+                                                <a :href="`https://github.com/${module.profile.username}`" class="text-decoration-none fw-bold" target="_blank">
+                                                    @{{ module.profile.username }}
+                                                </a>
+                                            </p>
+                                            <p class="fw-bold">{{ module.profile.fullName }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="items-count">{{ module.totalItems }}</td>
+                                <td class="action">
+                                    <button @click="showQuiz(module.name)" class="btn btn-dark">
+                                        Take<span class="d-none d-sm-inline-block">&nbsp;Quiz</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </template>
                     </tbody>
                 </table>
             </div>

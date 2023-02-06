@@ -48,3 +48,7 @@ header {
     width: 60px;
     border-radius: 50%;
 }
+
+.error-msg {
+    word-break: break-word;
+}
