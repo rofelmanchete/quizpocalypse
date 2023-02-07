@@ -122,7 +122,8 @@ as directly opening `index.html` in the browser may result in a
    ```
    http-server
    ```
-6. Access the URL that will appear in your web browser.
+5. Access the application by opening a web browser and entering the URL:
+  <http://localhost:8080>.
 
 ### Submission
 1. ***Commit*** and ***Push*** changes to your fork.
