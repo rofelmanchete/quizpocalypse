@@ -1,4 +1,4 @@
-## QuizPocalypse
+## BSIT-3A | QuizPocalypse
 Survive the QuizPocalypse, one question at a time!
 
 ### Installation
