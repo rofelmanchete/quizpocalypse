@@ -92,7 +92,11 @@ Survive the QuizPocalypse, one question at a time!
    ```
 
 ### Testing
-Open `index.html` in a web browser and test your quiz.
+Open `index.html` in
+[**LiveServer**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+or
+[**http-server**](https://www.npmjs.com/package/http-server)
+and test your quiz.
 
 
 ### Submission
