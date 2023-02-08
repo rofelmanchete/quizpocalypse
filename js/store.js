@@ -31,6 +31,7 @@ import peregrino from './modules/peregrino.js';
 import kayeangela from './modules/kayeangela.js';
 import joebe from './modules/joebe.js';
 import john from './modules/john.js';
+import rofel from './modules/rofel.js';
 
 const store = Vuex.createStore({
     modules: {
@@ -66,6 +67,7 @@ const store = Vuex.createStore({
         kayeangela,
         joebe,
         john,
+        rofel,
     }
 });
 
