@@ -106,11 +106,11 @@ export default {
             },
 
             {
-                question: "Mac Operating System is developed by which company",
+                question: "If I am a zombie, can I eat you?",
                 choices: {
-                    A: "Samsung",
-                    B: "Apple",
-                    C: "IBM"
+                    A: "yes",
+                    B: "yes",
+                    C: "yes"
                 },
                 correct: "B"
             
