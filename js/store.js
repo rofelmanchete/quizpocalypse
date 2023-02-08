@@ -1,7 +1,7 @@
 // modules
 import arvic from './modules/arvic.js';
 
-import arvic from './modules/rommel.js';
+import rommel from './modules/rommel.js';
 
 // import your .js file here (e.g. import john from './modules/john.js')
 // ...
