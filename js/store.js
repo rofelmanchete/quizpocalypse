@@ -9,6 +9,7 @@ import arvic from './modules/rommel.js';
 const store = Vuex.createStore({
     modules: {
         arvic,
+        rommel,
 
         // include your module here (e.g. john)
         // ...
