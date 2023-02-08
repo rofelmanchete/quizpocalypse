@@ -103,10 +103,12 @@ const app = Vue.createApp({
             }
 
             // set module score
-            this.modules.map(module => {
-                if(module.name === this.active.module)
-                    module.score = this.active.score;
-            });
+            for(let i=0; i<this.modules.length; i++) {
+                if(this.modules[i].name === this.active.module) {
+                    this.modules[i].score = this.active.score;
+                    break;
+                }
+            }
 
             this.active.finished = true;
             this.hideConfirm();
