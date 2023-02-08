@@ -1,8 +1,9 @@
 // modules
 import arvic from './modules/arvic.js';
-import peregrino from './modules/peregrino.js';
+
 // import your .js file here (e.g. import john from './modules/john.js')
 // ...
+import peregrino from './modules/peregrino.js';
 
 const store = Vuex.createStore({
     modules: {
