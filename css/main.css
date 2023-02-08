@@ -58,3 +58,8 @@ header {
 .error-msg {
     word-break: break-word;
 }
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
