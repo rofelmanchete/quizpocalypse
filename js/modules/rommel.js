@@ -75,7 +75,7 @@ export default {
                 choices: {
                     A: "Stephen Fry",
                     B: "Steve Jobs",
-                    C: "Bill Gates"
+                    C: "Billy Gates"
                 },
                 correct: "B"
             },
