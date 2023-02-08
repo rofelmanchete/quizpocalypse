@@ -19,7 +19,7 @@
                 <table class="table table-quizzes table-hover table-striped">
                     <thead>
                         <tr>
-                            <td colspan="4">
+                            <td colspan="5">
                                 <input v-model="query" type="search" class="form-control form-control-lg" placeholder="Search">
                             </td>
                         </tr>
@@ -27,12 +27,13 @@
                             <td class="row-number"></td>
                             <th>BSIT-3A</th>
                             <th style="text-align: center">ITEMS</th>
+                            <th class="text-primary" style="text-align: center">SCORE</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-if="searchedModules.length <= 0" class="table-danger">
-                            <td colspan="4" class="error-msg">
+                            <td colspan="5" class="error-msg">
                                 No quizzes found<template v-if="query.trim() !== ''"> for <b><i>{{ query }}</i></b></template>.
                             </td>
                         </tr>
@@ -57,8 +58,9 @@
                                     </div>
                                 </td>
                                 <td class="items-count">{{ module.totalItems }}</td>
+                                <td class="score text-primary">{{ module.score }}</td>
                                 <td class="action">
-                                    <button @click="showQuiz(module.name)" class="btn btn-dark">
+                                    <button @click="showQuiz(module.name)" class="btn" :class="{ 'btn-dark': module.score == null, 'btn-outline-dark': module.score != null }">
                                         Take<span class="d-none d-sm-inline-block">&nbsp;Quiz</span>
                                     </button>
                                 </td>
