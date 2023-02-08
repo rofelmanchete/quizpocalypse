@@ -1,6 +1,7 @@
 // modules
 import arvic from './modules/arvic.js';
 
+import jogi from './modules/jogi.js';
 // import your .js file here (e.g. import john from './modules/john.js')
 // ...
 
@@ -10,6 +11,7 @@ const store = Vuex.createStore({
 
         // include your module here (e.g. john)
         // ...
+        jogi,
 
     }
 });
