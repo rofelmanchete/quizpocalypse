@@ -10,8 +10,8 @@ const store = Vuex.createStore({
         arvic,
 
         // include your module here (e.g. john)
+        // ...
         alexa,
-
     }
 });
 
