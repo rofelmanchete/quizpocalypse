@@ -7,7 +7,7 @@ export default {
 
         items: [
             {
-                question: "1. Who founded PHP?",
+                question: "Who founded PHP?",
                 choices: {
                     A: "Joshua Abinal",
                     B: "Rommel Ramos",
@@ -17,7 +17,7 @@ export default {
             },
 
             {
-                question: "2. PHP is an acronym for?",
+                question: "PHP is an acronym for?",
                 choices: {
                     A: "Philippines",
                     B: "Hypertext Preprocessor",
@@ -27,7 +27,7 @@ export default {
             },
 
             {
-                question: "3. How many computer languages are in use?",
+                question: "How many computer languages are in use?",
                 choices: {
                     A: "2000",
                     B: "3000",
@@ -37,7 +37,7 @@ export default {
             },
 
             {
-                question: "4. Which of these is not an early computer?",
+                question: "Which of these is not an early computer?",
                 choices: {
                     A: "NASA",
                     B: "UNIVAC",
@@ -47,7 +47,7 @@ export default {
             },
 
             {
-                question: "5. Who founded Apple Computer?",
+                question: "Who founded Apple Computer?",
                 choices: {
                     A: "Bill Gates",
                     B: "Stephen Curry",
@@ -57,7 +57,7 @@ export default {
             },
 
             {
-                question: "6. Which of these is not a peripheral, in computer terms?",
+                question: "Which of these is not a peripheral, in computer terms?",
                 choices: {
                     A: "Mouse",
                     B: "Printer",
@@ -67,7 +67,7 @@ export default {
             },
 
             {
-                question: "7. What does the Internet prefix WWW stand for? ",
+                question: "What does the Internet prefix WWW stand for? ",
                 choices: {
                     A: "World Wide Weather",
                     B: "Wide World West",
@@ -77,7 +77,7 @@ export default {
             },
 
             {
-                question: "8. What does the Internet prefix WWW stand for?",
+                question: "What does the Internet prefix WWW stand for?",
                 choices: {
                     A: "Yahoo",
                     B: "An Intranet",
@@ -87,7 +87,7 @@ export default {
             },
 
             {
-                question: "9. Which of these is not a kind of computer?",
+                question: "Which of these is not a kind of computer?",
                 choices: {
                     A: "Apple",
                     B: "Lenovo",
@@ -97,7 +97,7 @@ export default {
             },
 
             {
-                question: "10. What is the name for a computer pointing device? ",
+                question: "What is the name for a computer pointing device? ",
                 choices: {
                     A: "Sound Card",
                     B: "Ram",
