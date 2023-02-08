@@ -20,9 +20,9 @@ export default {
             {
                 question: "Who founded Apple Computer?",
                 choices: {
-                    A: "Stephen Curry",
+                    A: "Cristine Haber",
                     B: "Steve Jobs",
-                    C: "Steve Harvey"
+                    C: "Zarina Lagatic"
                 },
                 correct: "B"
             
@@ -113,7 +113,7 @@ export default {
                     C: "yes"
                 },
                 correct: "B"
-            
+           
             },
 
 
