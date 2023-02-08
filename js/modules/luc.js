@@ -65,9 +65,9 @@ export default {
                 choices: {
                     A: "Zombie",
                     B: "Creeper",
-                    C: "Ghast"
+                    C: "Enderman"
                 },
-                correct: "A"
+                correct: "B"
             },
             {
                 question: "How many tons does the first ever computer weight?",
