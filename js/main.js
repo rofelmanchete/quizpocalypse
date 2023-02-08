@@ -101,6 +101,13 @@ const app = Vue.createApp({
                 if(item.correct === item.selected)
                     this.active.score += 1;
             }
+
+            // set module score
+            this.modules.map(module => {
+                if(module.name === this.active.module)
+                    module.score = this.active.score;
+            });
+
             this.active.finished = true;
             this.hideConfirm();
         }
@@ -115,6 +122,7 @@ const app = Vue.createApp({
                     name: key,
                     profile   : this.$store.getters[`${key}/profile`],
                     totalItems: this.$store.getters[`${key}/items`].length,
+                    score: null
                 });
             }
         }
