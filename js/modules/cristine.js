@@ -18,7 +18,7 @@ export default {
             {
                 question: " Amazon is one of the biggest tech companies in the world. Which product did it originally sell online?",
                 choices: {
-                    A: "Clothes",
+                    A: "Laptop",
                     B: "Drinks",
                     C: "Books"
                 },
